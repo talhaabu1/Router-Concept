@@ -6,7 +6,7 @@ const app = express();
 const prot = 3000;
 
 app.use("/admin", adminRouter);
-// app.use("/", publicRouter);
+app.use("/", publicRouter);
 
 app.listen(prot, () => {
   console.log(`Server is running on port ${prot}`);
